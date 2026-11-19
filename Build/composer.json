@@ -1,0 +1,40 @@
+{
+  "name": "diakonie-sh/dsh-mastodon-test",
+  "type": "project",
+  "description": "DSH Mastodon Test environment",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "path",
+      "url": ".."
+    }
+  ],
+  "require": {
+    "php": "^8.3.0",
+    "diakonie-sh/dsh-mastodon": "*@dev",
+    "typo3/cms-core": "^13.4.40 || ^14.3.12"
+  },
+  "require-dev": {
+    "helhum/typo3-console": "^v9.0",
+    "phpstan/phpstan": "2.3.6",
+    "phpstan/extension-installer": "1.4.3",
+    "saschaegerer/phpstan-typo3": "2.2.0 || 3.1.0",
+    "georgringer/news": "14.1.2",
+    "typo3/cms-filelist": "^13.4.40 || ^14.3.12",
+    "typo3/cms-filemetadata": "^13.4.40 || ^14.3.12",
+    "typo3/cms-tstemplate": "^13.4.40 || ^14.3.12",
+    "typo3/cms-lowlevel": "^13.4.40 || ^14.3.12",
+    "typo3/cms-scheduler": "^13.4.40 || ^14.3.12"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true,
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    },
+    "lock": false,
+    "preferred-install": {
+      "*": "dist"
+    }
+  }
+}

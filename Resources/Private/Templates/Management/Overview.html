@@ -1,0 +1,90 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+<f:layout name="Module"/>
+
+<f:section name="Content">
+  <f:asset.module identifier="@typo3/backend/context-menu.js"/>
+  <f:asset.module identifier="@dsh_mastodon/backend.js"/>
+
+  <h1>Mastodon-Posts</h1>
+
+  <div class="recordlist">
+    <div class="table-fit">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th></th>
+          <th class="col-responsive"><f:translate key="publication" extensionName="DshMastodon"/></th>
+          <th class="col-responsive"><f:translate key="text" extensionName="DshMastodon"/></th>
+          <th class="col-responsive"><f:translate key="reference" extensionName="DshMastodon"/></th>
+          <th class="col-responsive">Account</th>
+          <th class="col-control nowrap"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <f:for each="{posts}" as="post">
+          <tr>
+            <td class="col-icon">
+              <button
+                type="button"
+                class="btn btn-link"
+                data-contextmenu-trigger="click"
+                data-contextmenu-table="tx_dshmastodon_domain_model_post"
+                data-contextmenu-uid="{post.uid}"
+                title="..."
+                aria-label="{f:translate(key: 'LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.contextMenu.open')}"
+              >
+                <core:iconForRecord table="tx_dshmastodon_domain_model_post" row="{post.asRow}"/>
+              </button>
+            </td>
+            <td>
+              <f:if condition="{post.publishAt} == 0">
+                <f:then><f:translate key="not-planned" extensionName="DshMastodon"/></f:then>
+                <f:else>{f:format.date(pattern: 'long', date: post.publishAt)}</f:else>
+              </f:if>
+            </td>
+            <td style="max-width: 800px"><pre style="white-space: pre-line">{post.bodytext}</pre></td>
+            <td>
+              <f:if condition="{post.view.editRecordUri}">
+                <a href="{post.view.editRecordUri}"><kbd>{post.tablename}:{post.uidForeign}</kbd></a>
+              </f:if>
+            </td>
+            <td><a href="https://{post.account.domain}/@{post.account.username}" target="_blank">{post.account.domain}/@{post.account.username}</a></td>
+            <td>
+              <div class="btn-toolbar">
+                <f:if condition="!{post.url} && {post.view.publishUri}">
+                  <form action="{post.view.publishUri}" method="post">
+                    <button type="submit" class="btn btn-primary"><f:translate key="publish" extensionName="DshMastodon"/></button>
+                  </form>
+                </f:if>
+                <f:if condition="{post.url}">
+                  <a class="btn btn-default" target="_blank" href="{post.url}"><f:translate key="view" extensionName="DshMastodon"/></a>
+                </f:if>
+                <f:if condition="{post.view.editUri}">
+                  <a class="btn btn-default" href="{post.view.editUri}"><f:translate key="edit" extensionName="DshMastodon"/></a>
+                </f:if>
+                <f:if condition="{post.view.deleteUri} && !{post.published}">
+                  <form action="{post.view.deleteUri}" method="post">
+                    <button type="submit" class="btn btn-danger js-delete-confirm"><f:translate key="delete" extensionName="DshMastodon"/></button>
+                  </form>
+                </f:if>
+                <f:if condition="{post.view.unpublishUri} && {post.published}">
+                  <form action="{post.view.unpublishUri}" method="post">
+                    <button type="submit" class="btn btn-danger js-unpublish-confirm"><f:translate key="unpublish" extensionName="DshMastodon"/></button>
+                  </form>
+                </f:if>
+              </div>
+            </td>
+          </tr>
+        </f:for>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</f:section>
+
+</html>

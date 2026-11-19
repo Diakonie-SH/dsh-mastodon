@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-04-09T07:44:42Z"
+        product-name="dsh_mastodon">
+    <header/>
+    <body>
+      <trans-unit id="create">
+        <source>Create post</source>
+        <target>Post anlegen</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source>View</source>
+        <target>Ansehen</target>
+      </trans-unit>
+      <trans-unit id="edit">
+        <source>Edit</source>
+        <target>Bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="delete">
+        <source>Delete</source>
+        <target>Löschen</target>
+      </trans-unit>
+      <trans-unit id="publish">
+        <source>Publish</source>
+        <target>Publizieren</target>
+      </trans-unit>
+      <trans-unit id="unpublish">
+        <source>Unpublish</source>
+        <target>Depublizieren</target>
+      </trans-unit>
+      <trans-unit id="unpublishAndDelete">
+        <source>Unpublish and delete</source>
+        <target>Depublizieren und Löschen</target>
+      </trans-unit>
+      <trans-unit id="publication">
+        <source>Publication</source>
+        <target>Veröffentlichung</target>
+      </trans-unit>
+      <trans-unit id="text">
+        <source>Text</source>
+        <target>Text</target>
+      </trans-unit>
+      <trans-unit id="reference">
+        <source>Reference</source>
+        <target>Referenz</target>
+      </trans-unit>
+      <trans-unit id="not-planned">
+        <source>Not planned</source>
+        <target>Nicht geplant</target>
+      </trans-unit>
+      <trans-unit id="admin.reauthorize">
+        <source>re-authorize</source>
+        <target>Erneut autorisieren</target>
+      </trans-unit>
+      <trans-unit id="admin.add-account">
+        <source>Add account</source>
+        <target>Account hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="admin.add.step1">
+        <source>Step 1: Enter domain name</source>
+        <target>Schritt 1: Domain eingeben</target>
+      </trans-unit>
+      <trans-unit id="admin.domain.description">
+        <source>Only the domain name of your Mastodon instance, example: mastodon.social</source>
+        <target>Nur der Domain-Name der Mastodon-Instanz, z.B.: mastodon.social</target>
+      </trans-unit>
+      <trans-unit id="admin.add.step2">
+        <source>Step 2: Create application in Mastodon</source>
+        <target>Schritt 2: Erstelle eine Anwendung in Mastodon</target>
+      </trans-unit>
+      <trans-unit id="admin.application.create">
+        <source>Create application</source>
+        <target>Anwendung Erstellen</target>
+      </trans-unit>
+      <trans-unit id="admin.application.description">
+        <source>Reach via: Preferences > Development > New Application</source>
+        <target>Zu erreichen über: Einstellungen > Entwicklung > Neue Anwendung</target>
+      </trans-unit>
+      <trans-unit id="admin.application.name">
+        <source>Application name</source>
+        <target>Anwendungsname</target>
+      </trans-unit>
+      <trans-unit id="admin.application.name.description">
+        <source>Choose a name you want to show people below your posts.</source>
+        <target>Wähle einen Namen, den du Leuten unter deinen Posts anzeigen möchtest.</target>
+      </trans-unit>
+      <trans-unit id="admin.application.website">
+        <source>Application website</source>
+        <target>Website der Anwendung</target>
+      </trans-unit>
+      <trans-unit id="admin.application.website.description">
+        <source>You can optionally link the application name to a website.</source>
+        <target>Du kannst optional den Anwendungsnamen mit einer Website verknüpfen.</target>
+      </trans-unit>
+      <trans-unit id="admin.application.redirect">
+        <source>Redirect URI</source>
+        <target>Weiterleitungs-URI</target>
+      </trans-unit>
+      <trans-unit id="admin.application.permissions">
+        <source>Required scopes</source>
+        <target>Benötigte Befugnisse</target>
+      </trans-unit>
+      <trans-unit id="admin.add.step3">
+        <source>Step 3: Authorize TYPO3</source>
+        <target>Schritt 3: Autorisiere TYPO3</target>
+      </trans-unit>
+      <trans-unit id="admin.add.step3.description">
+        <source>After creating the application in Mastodon, click on the application name to see its details, then copy the client key and client secret here.</source>
+        <target>Nachdem du die Anwendung in Mastodon erstellt hast, klicke den Anwendungsnamen, um die Details anzuzeigen. Kopiere den Client-Schlüssel und das Client-Secret hierher.</target>
+      </trans-unit>
+      <trans-unit id="admin.add.step3.submit">
+        <source>Perform authorization</source>
+        <target>Autorisierung durchführen</target>
+      </trans-unit>
+      <trans-unit id="admin.client-key">
+        <source>Client Key</source>
+        <target>Client-Schlüssel</target>
+      </trans-unit>
+      <trans-unit id="admin.client-secret">
+        <source>Client Secret</source>
+        <target>Client-Secret</target>
+      </trans-unit>
+      <trans-unit id="admin.add.additional-login">
+        <source>For security reasons, you will have to enter your TYPO3 login credentials again after the confirmation in Mastodon.</source>
+        <target>Aus Sicherheitsgründen musst du nach der Bestätigung in Mastodon erneut deine TYPO3-Zugangsdaten eingeben.</target>
+      </trans-unit>
+      <trans-unit id="success">
+        <source>Success</source>
+        <target>Erfolg</target>
+      </trans-unit>
+      <trans-unit id="error">
+        <source>Error</source>
+        <target>Fehler</target>
+      </trans-unit>
+      <trans-unit id="auth.success">
+        <source>Successfully connected to Mastodon.</source>
+        <target>Erfolgreich mit Mastodon verbunden.</target>
+      </trans-unit>
+      <trans-unit id="auth.error">
+        <source>Could not connect to Mastodon.</source>
+        <target>Konnte nicht mit Mastodon verbinden.</target>
+      </trans-unit>
+      <trans-unit id="reauth.error">
+        <source>Could not re-authorize Mastodon account</source>
+        <target>Konnte nicht erneut mit Mastodon verbinden.</target>
+      </trans-unit>
+      <trans-unit id="missing_permission">
+        <source>Missing Permission</source>
+        <target>Fehlende Berechtigung</target>
+      </trans-unit>
+      <trans-unit id="crud.missing_create">
+        <source>You do not have permission to create a Mastodon post.</source>
+        <target>Kein Berechtigung zum Anlegen des Mastodon-Posts.</target>
+      </trans-unit>
+      <trans-unit id="crud.missing_delete">
+        <source>You do not have permission to delete a Mastodon post.</source>
+        <target>Kein Berechtigung zum Löschen des Mastodon-Posts.</target>
+      </trans-unit>
+      <trans-unit id="crud.missing_publish">
+        <source>You do not have permission to publish a Mastodon post.</source>
+        <target>Kein Berechtigung zum Publizieren des Mastodon-Posts.</target>
+      </trans-unit>
+      <trans-unit id="crud.missing_unpubli[sh">
+        <source>You do not have permission to unpublish a Mastodon post.</source>
+        <target>Kein Berechtigung zum Depublizieren des Mastodon-Posts.</target>
+      </trans-unit>
+      <trans-unit id="crud.error_create">
+        <source>There was an error when trying to create the Mastodon post.</source>
+        <target>Beim Mastodon-Post anlegen ist ein Fehler aufgetreten.</target>
+      </trans-unit>
+      <trans-unit id="crud.error_publish">
+        <source>There was an error when trying to publish the Mastodon post.</source>
+        <target>Beim Publizieren ist ein Fehler aufgetreten.</target>
+      </trans-unit>
+      <trans-unit id="crud.error_unpublish">
+        <source>There was an error when trying to unpublish the Mastodon post.</source>
+        <target>Beim Depublizieren ist ein Fehler aufgetreten.</target>
+      </trans-unit>
+      <trans-unit id="crud.success_create">
+        <source>Mastodon post created.</source>
+        <target>Mastodon-Post erstellt.</target>
+      </trans-unit>
+      <trans-unit id="crud.success_delete">
+        <source>Mastodon post deleted.</source>
+        <target>Mastodon-Post gelöscht.</target>
+      </trans-unit>
+      <trans-unit id="crud.success_publish">
+        <source>Mastodon post published: %s</source>
+        <target>Mastodon-Post publiziert: %s</target>
+      </trans-unit>
+      <trans-unit id="crud.success_unpublish">
+        <source>Mastodon post unpublished.</source>
+        <target>Mastodon-Post depubliziert.</target>
+      </trans-unit>
+      <trans-unit id="visibility.public">
+        <source>Public</source>
+        <target>Öffentlich</target>
+      </trans-unit>
+      <trans-unit id="visibility.unlisted">
+        <source>Public (silent)</source>
+        <target>Öffentlich (still)</target>
+      </trans-unit>
+      <trans-unit id="visibility.private">
+        <source>Only visible to followers</source>
+        <target>Nur eigene Follower</target>
+      </trans-unit>
+      <trans-unit id="visibility.direct">
+        <source>Direct message</source>
+        <target>Private Erwähnung</target>
+      </trans-unit>
+      <trans-unit id="visibility">
+        <source>Visibility</source>
+        <target>Sichtbarkeit</target>
+      </trans-unit>
+      <trans-unit id="publish_at">
+        <source>Publish time</source>
+        <target>Zeitpunkt</target>
+      </trans-unit>
+      <trans-unit id="published">
+        <source>Published?</source>
+        <target>Publiziert?</target>
+      </trans-unit>
+      <trans-unit id="unpublished">
+        <source>Unpublished?</source>
+        <target>Depubliziert?</target>
+      </trans-unit>
+      <trans-unit id="url">
+        <source>Public URL</source>
+        <target>Öffentliche URL</target>
+      </trans-unit>
+      <trans-unit id="images">
+        <source>Images</source>
+        <target>Bilder</target>
+      </trans-unit>
+      <trans-unit id="meta">
+        <source>Meta</source>
+        <target>Metadaten</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

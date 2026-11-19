@@ -1,0 +1,49 @@
+{
+  "name": "diakonie-sh/dsh-mastodon",
+  "type": "typo3-cms-extension",
+  "description": "Publish TYPO3 records as Mastodon posts.",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "typo3",
+    "extension",
+    "mastodon"
+  ],
+  "authors": [
+    {
+      "name": "Friedemann Altrock",
+      "role": "Developer",
+      "email": "hallo@faltrock.de",
+      "homepage": "https://www.faltrock.de"
+    }
+  ],
+  "require": {
+    "php": "^8.3.0",
+    "lrf141/oauth2-mastodon": "^1.0",
+    "typo3/cms-core": "^13.4.40 || ^14.3.12",
+    "typo3/cms-backend": "^13.4.40 || ^14.3.12",
+    "typo3/cms-extbase": "^13.4.40 || ^14.3.12",
+    "typo3/cms-fluid": "^13.4.40 || ^14.3.12",
+    "typo3/cms-frontend": "^13.4.40 || ^14.3.12"
+  },
+  "suggest": {
+    "georgringer/news": "*",
+    "typo3/cms-scheduler": "^13.4.40 || ^14.3.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "DiakonieSH\\DshMastodon\\": "Classes"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true,
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "dsh_mastodon"
+    }
+  }
+}

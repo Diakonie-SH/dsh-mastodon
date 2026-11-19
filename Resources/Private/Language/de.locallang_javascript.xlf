@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-04-09T07:44:42Z"
+        product-name="dsh_mastodon">
+    <header/>
+    <body>
+      <trans-unit id="delete.confirm.title">
+        <source>Delete this post?</source>
+        <target>Diesen Datensatz löschen?</target>
+      </trans-unit>
+      <trans-unit id="delete.confirm.content">
+        <source>This will remove the record from the database, and cannot be undone.</source>
+        <target>Dies entfernt den Datensatz aus der Datenbank und kann nicht rückgängig gemacht werden.</target>
+      </trans-unit>
+      <trans-unit id="delete.confirm.button.cancel">
+        <source>Cancel</source>
+        <target>Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="delete.confirm.button.ok">
+        <source>Yes, delete this record</source>
+        <target>Ja, Datensatz löschen</target>
+      </trans-unit>
+      <trans-unit id="unpublish.confirm.title">
+        <source>Unpublish this post?</source>
+        <target>Post depublizieren</target>
+      </trans-unit>
+      <trans-unit id="unpublish.confirm.content">
+        <source>The post will be deleted from the account's Mastodon instance.</source>
+        <target>Der Post wird von der Mastodon-Instanz des Accounts gelöscht.</target>
+      </trans-unit>
+      <trans-unit id="unpublish.confirm.button.ok">
+        <source>Yes, unpublish this post</source>
+        <target>Ja, Post depublizieren</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
